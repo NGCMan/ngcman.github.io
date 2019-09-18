@@ -50,7 +50,7 @@ function buy1() {
     neutrinos = neutrinos.minus(cost1)
     building1 = building1.plus(1)
     multiplier1 = multiplier1.times(1.05)
-    cost1 = cost1.times(1.15)
+    cost1 = cost1.times(2.15)
       document.getElementById("display").innerHTML =
 "You have " + neutrinos + " neutrinos.";
 document.getElementById("building1").innerHTML = "You have " + building1 + " 1st buildings." + " x" + multiplier1 + ", " + cost1;
@@ -68,7 +68,7 @@ function buy2() {
     neutrinos = neutrinos.minus(cost2)
     building2 = building2.plus(1)
     multiplier2 = multiplier2.times(1.05)
-    cost2 = cost2.times(1.15)
+    cost2 = cost2.times(2.15)
          document.getElementById("display").innerHTML =
 "You have " + neutrinos + " neutrinos.";
 document.getElementById("building1").innerHTML = "You have " + building1 + " 1st buildings." + " x" + multiplier1 + ", " + cost1;
@@ -86,7 +86,7 @@ function buy3() {
     neutrinos = neutrinos.minus(cost3)
     building3 = building3.plus(1)
     multiplier3 = multiplier3.times(1.05)
-    cost3 = cost3.times(1.15)
+    cost3 = cost3.times(2.15)
          document.getElementById("display").innerHTML =
 "You have " + neutrinos + " neutrinos.";
 document.getElementById("building1").innerHTML = "You have " + building1 + " 1st buildings." + " x" + multiplier1 + ", " + cost1;
@@ -104,7 +104,7 @@ function buy4() {
     neutrinos = neutrinos.minus(cost4)
     building4 = building4.plus(1)
     multiplier4 = multiplier4.times(1.05)
-    cost4 = cost4.times(1.15)
+    cost4 = cost4.times(2.15)
          document.getElementById("display").innerHTML =
 "You have " + neutrinos + " neutrinos.";
 document.getElementById("building1").innerHTML = "You have " + building1 + " 1st buildings." + " x" + multiplier1 + ", " + cost1;
@@ -122,7 +122,7 @@ function buy5() {
     neutrinos = neutrinos.minus(cost5)
     building5 = building5.plus(1)
     multiplier5 = multiplier5.times(1.05)
-    cost5 = cost5.times(1.15)
+    cost5 = cost5.times(2.15)
          document.getElementById("display").innerHTML =
 "You have " + neutrinos + " neutrinos.";
 document.getElementById("building1").innerHTML = "You have " + building1 + " 1st buildings." + " x" + multiplier1 + ", " + cost1;
@@ -140,7 +140,7 @@ function buy6() {
     neutrinos = neutrinos.minus(cost6)
     building6 = building6.plus(1)
     multiplier6 = multiplier6.times(1.05)
-    cost6 = cost6.times(1.15)
+    cost6 = cost6.times(2.15)
          document.getElementById("display").innerHTML =
 "You have " + neutrinos + " neutrinos.";
 document.getElementById("building1").innerHTML = "You have " + building1 + " 1st buildings." + " x" + multiplier1 + ", " + cost1;
@@ -158,7 +158,7 @@ function buy7() {
     neutrinos = neutrinos.minus(cost7)
     building7 = building7.plus(1)
     multiplier7 = multiplier7.times(1.05)
-    cost7 = cost7.times(1.15)
+    cost7 = cost7.times(2.15)
          document.getElementById("display").innerHTML =
 "You have " + neutrinos + " neutrinos.";
 document.getElementById("building1").innerHTML = "You have " + building1 + " 1st buildings." + " x" + multiplier1 + ", " + cost1;
@@ -176,7 +176,7 @@ function buy8() {
     neutrinos = neutrinos.minus(cost8)
     building8 = building8.plus(1)
     multiplier8 = multiplier8.times(1.05)
-    cost8 = cost8.times(1.15)
+    cost8 = cost8.times(2.15)
          document.getElementById("display").innerHTML =
 "You have " + neutrinos + " neutrinos.";
 document.getElementById("building1").innerHTML = "You have " + building1 + " 1st buildings." + " x" + multiplier1 + ", " + cost1;
