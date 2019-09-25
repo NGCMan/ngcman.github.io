@@ -33,6 +33,7 @@ function increment() {
   building5 = building5.plus(building6.times(multiplier6))
   building6 = building6.plus(building7.times(multiplier7))
   building7 = building7.plus(building8.times(multiplier8))
+  neutrinos.round()
   document.getElementById("display").innerHTML =
 "You have " + neutrinos + " neutrinos.";
 document.getElementById("building1").innerHTML = "Building 1:<br> Amount: " + building1 + ", Multiplier: " + " x" + multiplier1 + ", Cost:" + cost1;
@@ -46,7 +47,7 @@ document.getElementById("building8").innerHTML = "Building 8:<br> Amount: " + bu
 }
 function buy1() {
   if (neutrinos.greaterThan(cost1)) {
-    neutrinos = neutrinos.minus(cost1).round()
+    neutrinos = neutrinos.minus(cost1)
     building1 = building1.plus(1).round()
     multiplier1 = multiplier1.times(100)
     multiplier1 = multiplier1.times(1.05).round()
@@ -54,6 +55,7 @@ function buy1() {
     cost1 = cost1.times(100)
     cost1 = cost1.times(2.15).round()
     cost1 = cost1.div(100)
+    neutrinos.round()
       document.getElementById("display").innerHTML =
 "You have " + neutrinos + " neutrinos.";
 document.getElementById("building1").innerHTML = "Building 1:<br> Amount: " + building1 + ", Multiplier: " + " x" + multiplier1 + ", Cost:" + cost1;
