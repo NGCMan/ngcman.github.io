@@ -46,7 +46,7 @@ document.getElementById("building8").innerHTML = "Building 8:<br> Amount: " + bu
 }
 function buy1() {
   if (neutrinos.greaterThan(cost1)) {
-    neutrinos = neutrinos.minus(cost1)
+    neutrinos = neutrinos.minus(cost1).round()
     building1 = building1.plus(1).round()
     multiplier1 = multiplier1.times(100)
     multiplier1 = multiplier1.times(1.05).round()
