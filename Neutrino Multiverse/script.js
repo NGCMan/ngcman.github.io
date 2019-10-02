@@ -28,6 +28,24 @@ buildingnumber = new Decimal(0)
 //cost8 = new Decimal(1e24)
 //multiplier8 = new Decimal(1)
 document.getElementById("display").innerHTML = "You have " + neutrinos + " neutrinos.";
+function buyup() {
+  buildingnumber.add(1)
+      document.getElementById("display").innerHTML =
+"You are buying building number " + buildingnumber + ".";
+    document.getElementById("display").innerHTML =
+"You have " + neutrinos + " neutrinos.";
+document.getElementById("building1").innerHTML = "Building 1:<br> Amount: " + buildings[0] + ", Multiplier: " + " x" + multipliers[0] + ", Cost:" + costs[0];
+}
+
+function buydown() {
+  buildingnumber.sub(1)
+      document.getElementById("display").innerHTML =
+"You are buying building number " + buildingnumber + ".";
+    document.getElementById("display").innerHTML =
+"You have " + neutrinos + " neutrinos.";
+document.getElementById("building1").innerHTML = "Building 1:<br> Amount: " + buildings[0] + ", Multiplier: " + " x" + multipliers[0] + ", Cost:" + costs[0];
+}
+
 function increment() {
   neutrinos = neutrinos.plus(buildings[0].times(multipliers[0])).plus(1).round();
   buildings[0] = buildings[0].plus(buildings[1].times(multipliers[1])).round()
