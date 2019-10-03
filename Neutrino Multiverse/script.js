@@ -61,7 +61,7 @@ document.getElementById("building1").innerHTML = "Building " + buildingnumber.ad
 function increment() {
   neutrinos = neutrinos.plus(buildings[0].times(multipliers[0])).plus(1).round();
   buildings[0] = buildings[0].plus(buildings[1].times(multipliers[1])).round()
-  //building2 = building2.plus(building3.times(multiplier3)).round()
+  buildings[1] = buildings[1].plus(buildings[2].times(multipliers[2])).round()
   //building3 = building3.plus(building4.times(multiplier4)).round()
   //building4 = building4.plus(building5.times(multiplier5)).round()
   //building5 = building5.plus(building6.times(multiplier6)).round()
