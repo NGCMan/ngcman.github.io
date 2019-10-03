@@ -1,7 +1,7 @@
 neutrinos = new Decimal(0)
-costs = [new Decimal(10),new Decimal(100)]
-buildings = [new Decimal(0),new Decimal(0)]
-multipliers = [new Decimal(1), new Decimal(1)]
+costs = [new Decimal(10),new Decimal(100),new Decimal(10000)]
+buildings = [new Decimal(0),new Decimal(0),new Decimal(0)]
+multipliers = [new Decimal(1), new Decimal(1),new Decimal(1)]
 buildingnumber = new Decimal(0)
 //building1 = new Decimal(0)
 //cost1 = new Decimal(10)
