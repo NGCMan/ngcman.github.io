@@ -27,23 +27,35 @@ buildingnumber = new Decimal(0)
 //building8 = new Decimal(0)
 //cost8 = new Decimal(1e24)
 //multiplier8 = new Decimal(1)
-document.getElementById("display").innerHTML = "You have " + neutrinos + " neutrinos.";
 function buyup() {
-  buildingnumber.add(1)
-      document.getElementById("display").innerHTML =
-"You are buying building number " + buildingnumber + ".";
+  buildingnumber = buildingnumber.add(1)
+  if (buildingnumber.greaterThan(new Decimal(119))) {
+	buildingnumber = new Decimal(119)
+}
+  costs[buildingnumber] = costs[buildingnumber]
+  buildings[buildingnumber] = buildings[buildingnumber]
+  multipliers[buildingnumber] = multipliers[buildingnumber]
+      document.getElementById("displaybuilding").innerHTML =
+"You are buying building number " + buildingnumber.add(1) + ".";
     document.getElementById("display").innerHTML =
 "You have " + neutrinos + " neutrinos.";
-document.getElementById("building1").innerHTML = "Building 1:<br> Amount: " + buildings[0] + ", Multiplier: " + " x" + multipliers[0] + ", Cost:" + costs[0];
+document.getElementById("building1").innerHTML = "Building " + buildingnumber.add(1) + ":<br> Amount: " + buildings[buildingnumber] + ", Multiplier: " + " x" + multipliers[buildingnumber] + ", Cost:" + costs[buildingnumber];
 }
 
 function buydown() {
-  buildingnumber.sub(1)
-      document.getElementById("display").innerHTML =
-"You are buying building number " + buildingnumber + ".";
+  buildingnumber = buildingnumber.sub(1)
+if (buildingnumber.lessThan(new Decimal(0))) {
+	buildingnumber = new Decimal(0)
+}
+  costs[buildingnumber] = costs[buildingnumber]
+  buildings[buildingnumber] = buildings[buildingnumber]
+  multipliers[buildingnumber] = multipliers[buildingnumber]
+      document.getElementById("displaybuilding").innerHTML =
+"You are buying building number " + buildingnumber.add(1) + ".";
     document.getElementById("display").innerHTML =
 "You have " + neutrinos + " neutrinos.";
-document.getElementById("building1").innerHTML = "Building 1:<br> Amount: " + buildings[0] + ", Multiplier: " + " x" + multipliers[0] + ", Cost:" + costs[0];
+document.getElementById("building1").innerHTML = "Building " + buildingnumber.add(1) + ":<br> Amount: " + buildings[buildingnumber] + ", Multiplier: " + " x" + multipliers[buildingnumber] + ", Cost:" + costs[buildingnumber];
+
 }
 
 function increment() {
@@ -58,7 +70,7 @@ function increment() {
   //neutrinos = neutrinos.round()
   document.getElementById("display").innerHTML =
 "You have " + neutrinos + " neutrinos.";
-document.getElementById("building1").innerHTML = "Building 1:<br> Amount: " + buildings[0] + ", Multiplier: " + " x" + multipliers[0] + ", Cost:" + costs[0];
+document.getElementById("building1").innerHTML = "Building " + buildingnumber.add(1) + ":<br> Amount: " + buildings[buildingnumber] + ", Multiplier: " + " x" + multipliers[buildingnumber] + ", Cost:" + costs[buildingnumber];
 //document.getElementById("building2").innerHTML = "Building 2:<br> Amount: " + building2 + ", Multiplier: " + " x" + multiplier2 + ", Cost:" + cost2;
 //document.getElementById("building3").innerHTML = "Building 3:<br> Amount: " + building3 + ", Multiplier: " + " x" + multiplier3 + ", Cost:" + cost3;
 //document.getElementById("building4").innerHTML = "Building 4:<br> Amount: " + building4 + ", Multiplier: " + " x" + multiplier4 + ", Cost:" + cost4;
@@ -80,7 +92,7 @@ function buyx() {
     neutrinos = neutrinos.round()
       document.getElementById("display").innerHTML =
 "You have " + neutrinos + " neutrinos.";
-document.getElementById("building1").innerHTML = "Building 1:<br> Amount: " + buildings[0] + ", Multiplier: " + " x" + multipliers[0] + ", Cost:" + costs[0];
+document.getElementById("building1").innerHTML = "Building " + buildingnumber.add(1) + ":<br> Amount: " + buildings[buildingnumber] + ", Multiplier: " + " x" + multipliers[buildingnumber] + ", Cost:" + costs[buildingnumber];
 //document.getElementById("building2").innerHTML = "Building 2:<br> Amount: " + building2 + ", Multiplier: " + " x" + multiplier2 + ", Cost:" + cost2;
 //document.getElementById("building3").innerHTML = "Building 3:<br> Amount: " + building3 + ", Multiplier: " + " x" + multiplier3 + ", Cost:" + cost3;
 //document.getElementById("building4").innerHTML = "Building 4:<br> Amount: " + building4 + ", Multiplier: " + " x" + multiplier4 + ", Cost:" + cost4;
