@@ -9,28 +9,48 @@ document.getElementById("coordinates").innerHTML = "You are located at: (" + coo
 
 function North() {
   coordy++
-  document.getElementById("dungeonLevel").innerHTML = "You are at Floor " + dungeonLevel + " of the dungeon.";
+  if (coordy > 2) {
+  coordy= 2
+  document.getElementById("surroundings").innerHTML = "There is a wall near you."
+  }
+    document.getElementById("dungeonLevel").innerHTML = "You are at Floor " + dungeonLevel + " of the dungeon.";
           
 document.getElementById("coordinates").innerHTML = "You are located at: (" + coordx + "," + coordy + ")";
-}
+}  
+
 
 function South() {
   coordy--
-  document.getElementById("dungeonLevel").innerHTML = "You are at Floor " + dungeonLevel + " of the dungeon.";
+if (coordy < -2) {
+  coordy= -2
+  document.getElementById("surroundings").innerHTML = "There is a wall near you."
+  }
+    document.getElementById("dungeonLevel").innerHTML = "You are at Floor " + dungeonLevel + " of the dungeon.";
           
 document.getElementById("coordinates").innerHTML = "You are located at: (" + coordx + "," + coordy + ")";
 }
+ 
 
 function West() {
   coordx--
-  document.getElementById("dungeonLevel").innerHTML = "You are at Floor " + dungeonLevel + " of the dungeon.";
+if (coordx < -2) {
+  coordx= -2
+  document.getElementById("surroundings").innerHTML = "There is a wall near you."
+  }
+    document.getElementById("dungeonLevel").innerHTML = "You are at Floor " + dungeonLevel + " of the dungeon.";
           
 document.getElementById("coordinates").innerHTML = "You are located at: (" + coordx + "," + coordy + ")";
 }
 
+
 function East() {
   coordx++
-  document.getElementById("dungeonLevel").innerHTML = "You are at Floor " + dungeonLevel + " of the dungeon.";
+  
+if (coordx > 2) {
+  coordx=2
+  document.getElementById("surroundings").innerHTML = "There is a wall near you."
+  }
+    document.getElementById("dungeonLevel").innerHTML = "You are at Floor " + dungeonLevel + " of the dungeon.";
           
 document.getElementById("coordinates").innerHTML = "You are located at: (" + coordx + "," + coordy + ")";
 }
