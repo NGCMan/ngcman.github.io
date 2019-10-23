@@ -1,33 +1,81 @@
+<!DOCTYPE html>
 <html>
 <title>Text Based RPG</title>
 <head>
 <script type="text/javascript" src="script.js"></script>
 </head>
+  <body id="TheWholeGame">
   <p id="dungeonLevel"></p>
   <p id="coordinates"></p>
   <p id="surroundings"></p>
-  <table style="width:10%">
+  <table id="movement" style="width:10%">
   <tr>
-    <td><button onclick="NWest()">NW</button></td>
-    <td><button onclick="North()">N</button></td>
-    <td><button onclick="NEast()">NE</button></td>
+    <td><button id="movement" onclick="NWest()">NW</button></td>
+    <td><button id="movement"  onclick="North()">N</button></td>
+    <td><button id="movement"  onclick="NEast()">NE</button></td>
   </tr>
   <tr>
-    <td><button onclick="West()">W</button></td>
-    <td><button onclick="Wait()">Center</button></td>
-    <td><button onclick="East()">E</button></td>
+    <td><button id="movement"  onclick="West()">W</button></td>
+    <td><button id="movement"  onclick="Wait()">Center</button></td>
+    <td><button id="movement"  onclick="East()">E</button></td>
   </tr>
   <tr>
-    <td><button onclick="SWest()">SW</button></td>
-    <td><button onclick="South()">S</button></td>
-    <td><button onclick="SEast()">SE</button></td>
+    <td><button id="movement"  onclick="SWest()">SW</button></td>
+    <td><button id="movement"  onclick="South()">S</button></td>
+    <td><button id="movement"  onclick="SEast()">SE</button></td>
   </tr>
       <tr>
-    <td><button onclick="CUp()">Climb Up</button></td>
-    <td><button onclick="PUp()">Pick Up</button></td>
-    <td><button onclick="CDown()">Climb Down</button></td>
+    <td><button id="movement"  onclick="CUp()">Climb Up</button></td>
+    <td><button id="movement"  onclick="PUp()">Pick Up</button></td>
+    <td><button id="movement"  onclick="CDown()">Climb Down</button></td>
   </tr>
 </table>
+  <!--- Attack: --->
+  <table>
+          <tr id="attack">
+    <td><button id="attack" onclick="Attack()">Attack</button></td>
+    <td><button id="attack" onclick="Defend()">Defend</button></td>
+    <td><button id="attack" onclick="Magic()">Magic</button></td>
+  </tr>
+  </table>
+  <!--- Players: --->
+  <table>
+  <tr class="players">
+    <th class="players">You!</th>
+  </tr>
+  <tr class="players">
+    <td class="players">HP:</td>
+  </tr>
+  <tr class="players">
+    <td class="players">MP:</td>
+  </tr>
+    <tr class="players">
+    <td class="players">ATK:</td>
+  </tr>
+    <tr class="players">
+    <td class="players">DEF:</td>
+  </tr>
+</table>
+  <!--- Enemies: --->
+  <table>
+  <tr class="enemy">
+    <th class="enemy">Enemy 1:</th>
+  </tr>
+  <tr class="enemy">
+    <td class="enemy">HP:</td>
+  </tr>
+  <tr class="enemy">
+    <td class="enemy">MP:</td>
+  </tr>
+    <tr class="enemy">
+    <td class="enemy">ATK:</td>
+  </tr>
+    <tr class="enemy">
+    <td class="enemy">DEF:</td>
+  </tr>
+</table>
+  </body>
+  <h1 id="GameOver"></h1>
 </html>
 <!--- KNOWN BUGS:
       The surroundings don't reset.
