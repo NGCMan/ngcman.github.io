@@ -40,7 +40,201 @@ document.getElementById("coordinates").innerHTML = "You are located at: (" + coo
 }
 
  encounter = (getRandomInt(10) + 1);
-    
+
+    if (encounter==10) {
+        document.getElementById("surroundings").innerHTML = "A bug appears!"
+enemyHp = 6
+enemyMp = 0
+enemyAtk = 3
+enemyDef = 0
+      movement.style.display = "none";
+      attack.style.display = "block";
+      var y = document.getElementsByClassName("enemy");
+  y[2].innerHTML = "HP: " + enemyHp;
+var y = document.getElementsByClassName("enemy");
+  y[4].innerHTML = "MP: " + enemyMp;
+var y = document.getElementsByClassName("enemy");
+  y[6].innerHTML = "ATK: " + enemyAtk;
+var y = document.getElementsByClassName("enemy");
+  y[8].innerHTML = "DEF: " + enemyDef;
+    }
+  }
+}
+function NWest() {
+  coordy++
+  coordx--
+  if (dungeonLevel==0) {
+  if (coordy > 2) {
+  coordy= 2
+  }
+  document.getElementById("surroundings").innerHTML = "There is a wall near you."
+  }
+    document.getElementById("dungeonLevel").innerHTML = "You are at Floor " + dungeonLevel + " of the dungeon.";
+
+document.getElementById("coordinates").innerHTML = "You are located at: (" + coordx + "," + coordy + ")";
+  if (dungeonLevel==1) {
+    // Thanks to Mozilla for the function!
+    function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+ encounter = (getRandomInt(10) + 1);
+
+    if (encounter==10) {
+        document.getElementById("surroundings").innerHTML = "A bug appears!"
+enemyHp = 6
+enemyMp = 0
+enemyAtk = 3
+enemyDef = 0
+      movement.style.display = "none";
+      attack.style.display = "block";
+      var y = document.getElementsByClassName("enemy");
+  y[2].innerHTML = "HP: " + enemyHp;
+var y = document.getElementsByClassName("enemy");
+  y[4].innerHTML = "MP: " + enemyMp;
+var y = document.getElementsByClassName("enemy");
+  y[6].innerHTML = "ATK: " + enemyAtk;
+var y = document.getElementsByClassName("enemy");
+  y[8].innerHTML = "DEF: " + enemyDef;
+    }
+  }
+}
+function NEast() {
+  coordy++
+  coordx++
+  if (dungeonLevel==0) {
+  if (coordy > 2) {
+  coordy= 2
+  }
+  document.getElementById("surroundings").innerHTML = "There is a wall near you."
+  }
+    document.getElementById("dungeonLevel").innerHTML = "You are at Floor " + dungeonLevel + " of the dungeon.";
+
+document.getElementById("coordinates").innerHTML = "You are located at: (" + coordx + "," + coordy + ")";
+  if (dungeonLevel==1) {
+    // Thanks to Mozilla for the function!
+    function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+ encounter = (getRandomInt(10) + 1);
+
+    if (encounter==10) {
+        document.getElementById("surroundings").innerHTML = "A bug appears!"
+enemyHp = 6
+enemyMp = 0
+enemyAtk = 3
+enemyDef = 0
+      movement.style.display = "none";
+      attack.style.display = "block";
+      var y = document.getElementsByClassName("enemy");
+  y[2].innerHTML = "HP: " + enemyHp;
+var y = document.getElementsByClassName("enemy");
+  y[4].innerHTML = "MP: " + enemyMp;
+var y = document.getElementsByClassName("enemy");
+  y[6].innerHTML = "ATK: " + enemyAtk;
+var y = document.getElementsByClassName("enemy");
+  y[8].innerHTML = "DEF: " + enemyDef;
+    }
+  }
+}
+function SWest() {
+  coordy--
+  coordx--
+  if (dungeonLevel==0) {
+  if (coordy > 2) {
+  coordy= 2
+  }
+  document.getElementById("surroundings").innerHTML = "There is a wall near you."
+  }
+    document.getElementById("dungeonLevel").innerHTML = "You are at Floor " + dungeonLevel + " of the dungeon.";
+
+document.getElementById("coordinates").innerHTML = "You are located at: (" + coordx + "," + coordy + ")";
+  if (dungeonLevel==1) {
+    // Thanks to Mozilla for the function!
+    function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+ encounter = (getRandomInt(10) + 1);
+
+    if (encounter==10) {
+        document.getElementById("surroundings").innerHTML = "A bug appears!"
+enemyHp = 6
+enemyMp = 0
+enemyAtk = 3
+enemyDef = 0
+      movement.style.display = "none";
+      attack.style.display = "block";
+      var y = document.getElementsByClassName("enemy");
+  y[2].innerHTML = "HP: " + enemyHp;
+var y = document.getElementsByClassName("enemy");
+  y[4].innerHTML = "MP: " + enemyMp;
+var y = document.getElementsByClassName("enemy");
+  y[6].innerHTML = "ATK: " + enemyAtk;
+var y = document.getElementsByClassName("enemy");
+  y[8].innerHTML = "DEF: " + enemyDef;
+    }
+  }
+}
+function SEast() {
+  coordy--
+  coordx++
+  if (dungeonLevel==0) {
+  if (coordy > 2) {
+  coordy= 2
+  }
+  document.getElementById("surroundings").innerHTML = "There is a wall near you."
+  }
+    document.getElementById("dungeonLevel").innerHTML = "You are at Floor " + dungeonLevel + " of the dungeon.";
+
+document.getElementById("coordinates").innerHTML = "You are located at: (" + coordx + "," + coordy + ")";
+  if (dungeonLevel==1) {
+    // Thanks to Mozilla for the function!
+    function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+ encounter = (getRandomInt(10) + 1);
+
+    if (encounter==10) {
+        document.getElementById("surroundings").innerHTML = "A bug appears!"
+enemyHp = 6
+enemyMp = 0
+enemyAtk = 3
+enemyDef = 0
+      movement.style.display = "none";
+      attack.style.display = "block";
+      var y = document.getElementsByClassName("enemy");
+  y[2].innerHTML = "HP: " + enemyHp;
+var y = document.getElementsByClassName("enemy");
+  y[4].innerHTML = "MP: " + enemyMp;
+var y = document.getElementsByClassName("enemy");
+  y[6].innerHTML = "ATK: " + enemyAtk;
+var y = document.getElementsByClassName("enemy");
+  y[8].innerHTML = "DEF: " + enemyDef;
+    }
+  }
+}
+function South() {
+  coordy--
+  if (dungeonLevel==0) {
+if (coordy < -2) {
+  coordy= -2
+}
+  document.getElementById("surroundings").innerHTML = "There is a wall near you."
+  }
+    document.getElementById("dungeonLevel").innerHTML = "You are at Floor " + dungeonLevel + " of the dungeon.";
+
+document.getElementById("coordinates").innerHTML = "You are located at: (" + coordx + "," + coordy + ")";
+   if (dungeonLevel==1) {
+    // Thanks to Mozilla for the function!
+    function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+ encounter = (getRandomInt(10) + 1);
+
     if (encounter==10) {
         document.getElementById("surroundings").innerHTML = "A bug appears!"
 enemyHp = 6
@@ -62,20 +256,6 @@ var y = document.getElementsByClassName("enemy");
 }
 
 
-function South() {
-  coordy--
-  if (dungeonLevel==0) {
-if (coordy < -2) {
-  coordy= -2
-}
-  document.getElementById("surroundings").innerHTML = "There is a wall near you."
-  }
-    document.getElementById("dungeonLevel").innerHTML = "You are at Floor " + dungeonLevel + " of the dungeon.";
-
-document.getElementById("coordinates").innerHTML = "You are located at: (" + coordx + "," + coordy + ")";
-}
-
-
 function West() {
   coordx--
 if (dungeonLevel==0) {
@@ -87,6 +267,32 @@ if (coordx < -2) {
     document.getElementById("dungeonLevel").innerHTML = "You are at Floor " + dungeonLevel + " of the dungeon.";
 
 document.getElementById("coordinates").innerHTML = "You are located at: (" + coordx + "," + coordy + ")";
+   if (dungeonLevel==1) {
+    // Thanks to Mozilla for the function!
+    function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+ encounter = (getRandomInt(10) + 1);
+
+    if (encounter==10) {
+        document.getElementById("surroundings").innerHTML = "A bug appears!"
+enemyHp = 6
+enemyMp = 0
+enemyAtk = 3
+enemyDef = 0
+      movement.style.display = "none";
+      attack.style.display = "block";
+      var y = document.getElementsByClassName("enemy");
+  y[2].innerHTML = "HP: " + enemyHp;
+var y = document.getElementsByClassName("enemy");
+  y[4].innerHTML = "MP: " + enemyMp;
+var y = document.getElementsByClassName("enemy");
+  y[6].innerHTML = "ATK: " + enemyAtk;
+var y = document.getElementsByClassName("enemy");
+  y[8].innerHTML = "DEF: " + enemyDef;
+    }
+  }
 }
 
 
@@ -101,6 +307,32 @@ if (coordx > 2) {
     document.getElementById("dungeonLevel").innerHTML = "You are at Floor " + dungeonLevel + " of the dungeon.";
 
 document.getElementById("coordinates").innerHTML = "You are located at: (" + coordx + "," + coordy + ")";
+   if (dungeonLevel==1) {
+    // Thanks to Mozilla for the function!
+    function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+ encounter = (getRandomInt(10) + 1);
+
+    if (encounter==10) {
+        document.getElementById("surroundings").innerHTML = "A bug appears!"
+enemyHp = 6
+enemyMp = 0
+enemyAtk = 3
+enemyDef = 0
+      movement.style.display = "none";
+      attack.style.display = "block";
+      var y = document.getElementsByClassName("enemy");
+  y[2].innerHTML = "HP: " + enemyHp;
+var y = document.getElementsByClassName("enemy");
+  y[4].innerHTML = "MP: " + enemyMp;
+var y = document.getElementsByClassName("enemy");
+  y[6].innerHTML = "ATK: " + enemyAtk;
+var y = document.getElementsByClassName("enemy");
+  y[8].innerHTML = "DEF: " + enemyDef;
+    }
+  }
 }
 
 const interval = setInterval(function() {
@@ -119,8 +351,8 @@ document.getElementById("surroundings").innerHTML = "There is a staircase leadin
 }
  }
   if (hp <= 0) {
+     document.getElementById("GameOver").innerHTML = "<h1>Game Over!</h1>"
   TheWholeGame.style.display = "none";
-  document.getElementById("GameOver").innerHTML = "<h1>Game Over!</h1>"
 }
 }, 50);
 
@@ -158,7 +390,7 @@ var x = document.getElementsByClassName("players");
   x[8].innerHTML = "DEF: " + def;
 
 function Attack() {
-  //Not the best formula, but it works.
+  //Not the best formula, as it can heal the enemy if its defense is higher than your attack, but it works.
   enemyHp -= atk+enemyDef
   hp -= enemyAtk+def
   var x = document.getElementsByClassName("players");
@@ -205,5 +437,5 @@ var y = document.getElementsByClassName("enemy");
   y[8].innerHTML = "DEF: " + enemyDef;
 }
 function Magic() {
-  //To be announced...
+  //To be coded...
 }
