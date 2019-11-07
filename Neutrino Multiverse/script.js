@@ -1,7 +1,7 @@
 neutrinos = new Decimal(0)
-costs = [new Decimal(10),new Decimal(100),new Decimal(10000),new Decimal(1e6),new Decimal(1e9),new Decimal(1e13),new Decimal(1e18),new Decimal(1e24),new Decimal(1e28)]
-buildings = [new Decimal(0),new Decimal(0),new Decimal(0),new Decimal(0),new Decimal(0),new Decimal(0),new Decimal(0),new Decimal(0),new Decimal(0)]
-multipliers = [new Decimal(1),new Decimal(1),new Decimal(1),new Decimal(1),new Decimal(1),new Decimal(1),new Decimal(1),new Decimal(1),new Decimal(1)]
+costs = [new Decimal(10),new Decimal(100),new Decimal(10000),new Decimal(1e6),new Decimal(1e9),new Decimal(1e13),new Decimal(1e18),new Decimal(1e24),new Decimal(1e28),new Decimal(1e32)]
+buildings = [new Decimal(0),new Decimal(0),new Decimal(0),new Decimal(0),new Decimal(0),new Decimal(0),new Decimal(0),new Decimal(0),new Decimal(0),new Decimal(0)]
+multipliers = [new Decimal(1),new Decimal(1),new Decimal(1),new Decimal(1),new Decimal(1),new Decimal(1),new Decimal(1),new Decimal(1),new Decimal(1),new Decimal(1)]
 buildingnumber = new Decimal(0)
 //building1 = new Decimal(0)
 //cost1 = new Decimal(10)
@@ -68,6 +68,7 @@ function increment() {
   buildings[5] = buildings[5].plus(buildings[6].times(multipliers[6])).round()
   buildings[6] = buildings[6].plus(buildings[7].times(multipliers[7])).round()
   buildings[7] = buildings[7].plus(buildings[8].times(multipliers[8])).round()
+  buildings[8] = buildings[8].plus(buildings[9].times(multipliers[9])).round()
   //building3 = building3.plus(building4.times(multiplier4)).round()
   //building4 = building4.plus(building5.times(multiplier5)).round()
   //building5 = building5.plus(building6.times(multiplier6)).round()
