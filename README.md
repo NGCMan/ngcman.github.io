@@ -1,2 +1,2 @@
 # ngcman.github.io
-https://ngcman.github.io/Homepage.html
+An archive of the old Neutrino Multiverse, before it was switched to 10 dimensions.
