@@ -4,7 +4,7 @@ function getRandomInt(max) {
 
 var game = {
   chips = new Decimal("100")
-  card1 = getRandomInt(13) + 1
+  card1 = getRandomInt(13) + 1 //For some reason getRandomInt isn't working, maybe I need to define it in "game"?
   card2 = getRandomInt(13) + 1
   cardValue = 0
   hasAce = 0
