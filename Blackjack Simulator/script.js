@@ -11,19 +11,19 @@ var game = {
 }
 
 function cardDisplay() {
-  if (card1 == 1) {
-  hasAce++
+  if (game.card1 == 1) {
+  game.hasAce++
   document.getElementById('cardDisplay').innerHTML = "A"
   }
-  if (card1 == 2) {
+  if (game.card1 == 2) {
   document.getElementById('cardDisplay').innerHTML = "2"
   }
 }
 
 function aceCheck() {
-  if (cardValue > 21) {
-  if (hasAce == 1) {
-  cardValue -= 10
+  if (game.cardValue > 21) {
+  if (game.hasAce == 1) {
+  game.cardValue -= 10
   }
   }
 }
